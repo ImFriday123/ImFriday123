@@ -1,0 +1,42 @@
+
+.menu_list {
+    background-color: #eacc81;
+    width: 80%
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.menu {
+    text-align: center;
+}
+
+.coffee-name p, .tea-name p, .pastries-name p {
+    display: inline-block;
+}
+
+.coffee-name, .tea-name, .pastries-name {
+    text-align: left;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.coffee-name::after, .tea-name::after, .pastries-name::after {
+    white-space: nowrap;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 3px dotted #333;
+    margin: 0 10px;
+}
+
+.price {
+    text-align: right;
+    white-space: nowrap;
+}

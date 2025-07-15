@@ -1,0 +1,120 @@
+h1 {
+    text-align: center;
+}
+
+.marker-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.marker {
+    display: flex;
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    box-shadow: 10px 0 20px 3px #010100;
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    border: 3px solid #004c13;
+    
+}
+
+.blue {
+    background: linear-gradient(#0030ab, #5d7189, #06407e);
+    border: 3px solid #041962;
+}
+.red {
+    background: linear-gradient(#7a150f, #c95d51, #a60b0b);
+    border: 3px solid #4b0404;
+}
+.yellow {
+    background: linear-gradient(#a3860f, #f3ee00, #5c5f07);
+    border: 3px solid #a57606;
+}
+
+
+.cap {
+    width: 30px;
+    height: 90px;
+    background-color: #616161;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 3px solid #2f2f30;
+}
+
+/* The wrapper for the head, I couldn't make the border for the trapesium */
+
+.wrapper-neck {
+    width: 60px;
+    height: 45px;
+    background-color: #363535;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -85px;
+    top: 20px
+
+}
+.neck {
+    width: 60px;
+    height: 40px;
+    background: linear-gradient(90deg, #ad4545, #000000, #1c1c1c);
+    clip-path: polygon(32% 0%, 68% 0%, 94% 100%, 7% 100%); /*This is the trapesium shape*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* The wrapper for the head, I couldn't make the border for the trapesium */
+.wrapper-head-green, .wrapper-head-blue, .wrapper-head-red, .wrapper-head-yellow {
+    width: 24px;
+    height: 21px;
+    clip-path: polygon(2% 40%, 90% 0%, 100% 100%, 0% 100%);
+    transform: rotate(-90deg);
+    position: relative;
+    left: -159px;
+    top: 32px
+
+}
+.head-green, .head-blue, .head-red, .head-yellow {
+    width: 24px;
+    height: 21px;
+    clip-path: polygon(10% 50%, 80% 20%, 90% 100%, 10% 100%);
+}
+
+.wrapper-head-green {
+    background-color: #04581e;
+}
+.head-green {
+    background-color: #009116;
+} 
+
+.wrapper-head-blue {
+    background-color: #082b79;
+}
+.head-blue {
+    background-color: #0030ab;
+}
+
+.wrapper-head-red {
+    background-color: #610907;
+}
+.head-red {
+    background-color: #de150f;
+}
+
+.wrapper-head-yellow {
+    background-color: #9c6c03;
+}
+.head-yellow {
+    background-color: #ffcd11;
+}
